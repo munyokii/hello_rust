@@ -31,7 +31,21 @@ fn data_types() {
    , grade);
 }
 
+// FUNCTIONS WITH PARAMETERS
+fn greet(name:&str) {
+   println!("Halo halo {}.", name);
+}
+
+fn add(a:i32, b:i32) -> i32 {
+   a + b
+}
+
+
 fn main() {
    variables_const_shadowing();
    data_types();
+   greet("muli");
+
+   let result = add(32, 65);
+   println!("Result is: {}", result);
 }
